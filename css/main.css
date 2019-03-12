@@ -6,19 +6,23 @@ body
   font-family: Helvetica, Arial, sans-serif;
 }
 
+/*main container*/
 .container 
 {
   margin: 0 auto;
   background-color: #efefef;
+  /*don't let the site get any bigger than this*/
   max-width: 1140px;
 }
   
+  /*boxes for mobile*/
   .box 
   {
+    align-content: center;
     color: #fff;
     display: flex;
     flex-direction: row;
-    padding: 20px;
+    padding-top: 30px;
     width: 100%;
   }
 
@@ -32,6 +36,8 @@ body
    background-color: rgb(255,0,0);
   }
 
+  
+  /*hide boxes*/
   .box3
   {
     display: hidden;
@@ -43,14 +49,13 @@ body
   }
 
 
-
+/*when screen gets x big, perform this*/
 @media screen and (min-width: 641px) {
-  .box 
+  
+  .container 
   {
-    text-align: center;
     display: flex;
     flex-direction: row;
-    width: 100%;
   }
 
   .box1
@@ -72,14 +77,4 @@ body
   {
     background-color: rgb(128,248,128);
   }
-}
-
-
-@media screen and (min-width: 1140px) {
-
-  .box
-  {
-    
-  }
-
 }
